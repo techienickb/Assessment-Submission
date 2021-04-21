@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "assessment-submission-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/AssessmentSubmission/AssessmentSubmissionWebPart.js",
+          "manifest": "./src/webparts/AssessmentSubmission/AssessmentSubmissionWebPart.manifest.json"
+        }
+      ]
+    },
+    "assessment-submission-monitor-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/assessmentSubmissionMonitor/AssessmentSubmissionMonitorWebPart.js",
+          "manifest": "./src/webparts/assessmentSubmissionMonitor/AssessmentSubmissionMonitorWebPart.manifest.json"
+        }
+      ]
+    },
+    "assessment-collaborative-folder-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/assessmentCollaborativeFolder/AssessmentCollaborativeFolderWebPart.js",
+          "manifest": "./src/webparts/assessmentCollaborativeFolder/AssessmentCollaborativeFolderWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AssessmentSubmissionWebPartStrings": "lib/webparts/AssessmentSubmission/loc/{locale}.js",
+    "AssessmentSubmissionMonitorWebPartStrings": "lib/webparts/assessmentSubmissionMonitor/loc/{locale}.js",
+    "AssessmentCollaborativeFolderWebPartStrings": "lib/webparts/assessmentCollaborativeFolder/loc/{locale}.js"
+  }
+}
